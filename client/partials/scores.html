@@ -1,0 +1,85 @@
+
+<div class="container" ng-app="myApp" ng-controller="ScoreController">
+
+    <h2>leader board</h2>
+<br>
+    <p>All time</p>
+    <table class="table table-bordered">
+        <thead>
+        <tr>
+            <th>Name</th>
+            <th>Score</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr ng-repeat="all in alltime| limitTo:10">
+            <td><b>{{all.name}}</b></td>
+            <td>{{all.won}}</td>
+        </tr>
+        </tbody>
+    </table>
+
+    <p>This year</p>
+    <table class="table table-bordered">
+        <thead>
+        <tr>
+            <th>Name</th>
+            <th>Score</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr ng-repeat="all in year| limitTo:10">
+            <td><b>{{all.name}}</b></td>
+            <td>{{all.won}}</td>
+        </tr>
+        </tbody>
+
+    </table>
+    <p>This month</p>
+    <table class="table table-bordered">
+        <thead>
+        <tr>
+            <th>Name</th>
+            <th>Score</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr ng-repeat="all in month| limitTo:10">
+            <td><b>{{all.name}}</b></td>
+            <td>{{all.won}}</td>
+        </tr>
+        </tbody>
+    </table>
+
+    <p>This week</p>
+    <table class="table table-bordered">
+        <thead>
+        <tr>
+            <th>Name</th>
+            <th>Score</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr ng-repeat="all in week| limitTo:10">
+            <td><b>{{all.name}}</b></td>
+            <td>{{all.won}}</td>
+        </tr>
+        </tbody>
+    </table>
+
+    <p>Today</p>
+    <table class="table table-bordered">
+        <thead>
+        <tr>
+            <th>Name</th>
+            <th>Score</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr ng-repeat="all in day| limitTo:10">
+            <td><b>{{all.name}}</b></td>
+            <td>{{all.won}}</td>
+        </tr>
+        </tbody>
+    </table>
+</div>

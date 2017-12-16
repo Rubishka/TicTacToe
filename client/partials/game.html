@@ -1,0 +1,27 @@
+<div ng-controller="GameController">
+<div ng-if="matched === 1">
+    <div class="text-center">
+        <h1 class="pure-splash-head" ng-hide="winner || cat">IT'S  <span class="blue">{{ currentPlayer.Name | uppercase}}</span>'S TURN</h1>
+        <h1 class="pure-splash-head" ng-show="winner"><span class="blue">{{ currentPlayer.Name | uppercase}}</span>  <span class="red">WON</span> THE GAME!</h1>
+        <h1 class="pure-splash-head" ng-show="cat">TIE ! </h1>
+        <h1 class="pure-splash-subhead" ng-show="winner || cat">REDIRECTING TO HOME IN 3..2..1...</h1>
+        <br/><br/><br/>
+        <div layout-margin layout-fill  ng-repeat="row in board">
+            <md-button class="md-accent btn-tic-tac-toe md-raised"
+                       ng-repeat="cell in row "
+                       ng-disabled="isTaken(cell)||winnerDisabled();"
+                       ng-class="cell.value"
+                       ng-click="move(cell);">{{ cell.value }}</md-button>
+        </div>
+        <br/>
+    </div>
+</div>
+<div ng-if="matched === 0">
+    <center>
+        <br><br><br><br><br><br>
+    <h1 class=" text-center pure-splash-head">Wait for another player to join...</h1>
+        <br><br>
+    <a class="md-button md-primary" ng-click="cancelGame()" href="#/" role="button">Cancel</a>
+        </center>
+</div>
+</div>

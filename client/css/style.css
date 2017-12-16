@@ -1,0 +1,15 @@
+
+.done-true {
+    text-decoration: line-through;
+}
+
+.jumbotron {
+    background-image: url("https://cdn.shopify.com/s/files/1/0496/0085/products/XOXO-2D-WG-214.jpeg?v=1426674371");
+    background-color: #fffdfb;
+    margin-bottom: 0;
+    min-height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    -webkit-background-size: cover;
+    background-size: cover;
+}

@@ -1,0 +1,23 @@
+
+<div class="jumbotron">
+    <h1>
+        <br><br>
+
+        <h1><br>Tic<br>
+            Tac<br>
+            Toe </h1>
+    </h1>
+</div>
+
+<div ng-controller="GameController">
+
+    <center>
+        <a class="md-button md-primary" href="#/game" ng-click="startNewGame()" role="button">Start new game</a>
+
+        <div ng-if="isAuthenticated()">
+
+            <a class="md-button md-primary" href="#/game" ng-click="playAgainst()" role="button">Join an existing game</a>
+    </a>
+</div>
+        </center>
+</div>
