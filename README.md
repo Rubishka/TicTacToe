@@ -14,6 +14,8 @@ SETUP:
 
 5. go to http://localhost:3000/ in your terminal and check the app now. 
 
+You can also test the app in HEROKU: https://multyplayer-tictactoe.herokuapp.com/ 
+
 TEST:
 Open new command prompt or Terminal in the project folder and type `npm test`
 
