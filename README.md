@@ -1,5 +1,5 @@
 
-TIC-TAC-TOE
+TIC-TAC-TOE by Rubi Shkalim
 
 Multiplayer tic-tac-toe game built with MEAN stack and socket.io 
 
@@ -10,9 +10,9 @@ SETUP:
 
 3. Open new command prompt or Terminal in the project folder and type `npm install`.
 
-4. Type `node app.js'.
+4. Type `npm start'.
 
-go to http://localhost:3000/ in your terminal and check the app now. 
+5. go to http://localhost:3000/ in your terminal and check the app now. 
 
 TEST:
 Open new command prompt or Terminal in the project folder and type `npm test`
