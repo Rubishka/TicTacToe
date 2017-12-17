@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
 
-var app = require('./app');
+var app = require('./server/app');
 var debug = require('debug')('passport-mongo');
 
 app.set('port', process.env.PORT || 3000);
