@@ -4,7 +4,7 @@
   "description": "A realtime online multiplayer game.",
   "scripts": {
     "test": "karma start karma.conf.js",
-    "start": "server.js"
+    "start": "node server.js"
   },
   "author": "Rubi Shkalim",
   "dependencies": {
@@ -42,6 +42,5 @@
   "engines": {
     "node": "8.9.3",
     "npm": "5.5.1"
-
   }
 }
