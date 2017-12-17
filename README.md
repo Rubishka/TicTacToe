@@ -8,9 +8,9 @@ SETUP:
 
 2. Open command prompt or Terminal and run mongoDB.
 
-2. Open new command prompt or Terminal in the project folder and type `npm install`.
+3. Open new command prompt or Terminal in the project folder and type `npm install`.
 
-3. Type `node app.js'.
+4. Type `node app.js'.
 
 go to http://localhost:3000/ in your terminal and check the app now. 
 

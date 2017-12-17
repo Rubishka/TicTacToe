@@ -23,9 +23,11 @@ module.exports = function(config) {
         }
     });
 };
-
+//heroku config:set PROD_MONGODB=mongodb://Rub:Mlab88@ds159696.mlab.com:59696/user'
+var url= 'mongodb://Rub:Mlab88@ds159696.mlab.com:59696/user'
+//var url='mongodb://localhost/mean-auth'
 // mongoose
-mongoose.connect('mongodb://localhost/mean-auth');
+mongoose.connect(url);
 
 // user schema/model
 var User = require('./models/user.js');

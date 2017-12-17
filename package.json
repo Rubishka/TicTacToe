@@ -2,7 +2,8 @@
   "name": "TicTacToe",
   "description": "A realtime online multiplayer game.",
   "scripts": {
-    "test": "karma start karma.conf.js"
+    "test": "karma start karma.conf.js",
+    "start": "node server.js"
   },
   "author": "Rubi Shkalim",
   "dependencies": {
@@ -18,7 +19,7 @@
     "karma": "^0.12.31",
     "karma-junit-sonarqube-reporter": "~0.0.1",
     "mocha": "^4.0.1",
-    "mongoose": "^4.4.5",
+    "mongoose": "~4.11.1",
     "morgan": "^1.7.0",
     "passport": "^0.3.2",
     "passport-local": "^1.0.0",
